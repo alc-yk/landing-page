@@ -1,0 +1,53 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px;
+    margin: 32px;
+    gap: 32px;
+
+    border: solid red;
+}
+
+.links{
+    display:flex;
+    gap: 12px;
+    border: solid green;
+
+}
+
+.lower-header{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    padding: 18px;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    border: solid aqua;
+}
+
+.left-lower-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-shrink: 0;
+
+    border: solid springgreen;
+}
+
+.upper-header{
+    display:flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: solid rebeccapurple;
+}
+
+.logo{
+    display: flex;
+    overflow: hidden;
+}
+
