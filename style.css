@@ -32,9 +32,10 @@ body{
 
 .left-lower-header{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+
     flex-basis: 300px;
-    flex-shrink: 0;
+    
 
     border: solid springgreen;
 }
@@ -51,3 +52,14 @@ body{
     overflow: hidden;
 }
 
+.center{
+    text-align: center;
+}
+
+
+.button-header{
+    width: 150px;
+    height: 32px;
+    align-self: center;
+    border-radius: 32px;
+}
