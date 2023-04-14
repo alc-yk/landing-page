@@ -26,7 +26,8 @@ body{
     padding: 18px;
     flex-shrink: 1;
     flex-grow: 1;
-
+    flex-wrap: wrap;
+    
     border: solid aqua;
 }
 
@@ -56,10 +57,76 @@ body{
     text-align: center;
 }
 
+.img   {
+    display: flex;
+    max-width: 100%;
+    flex-shrink: 1;
+}
 
 .button-header{
     width: 150px;
     height: 32px;
     align-self: center;
     border-radius: 32px;
+}
+
+.mid-title{
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+
+    border: solid red;
+}
+
+.info-boxes{
+    display: flex;
+    gap: 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid blue;
+}
+
+div.square{
+    width: 120px;
+    height: 150px;
+    background-color: eee;
+
+    overflow: hidden;
+
+    border: solid green;
+}
+
+.mid-upper{
+    border: solid rgb(255, 96, 221);
+
+}
+
+.box1{
+    position: relative;
+    top: -50px;
+    left: -100px;
+}
+.img2,
+.box2{
+    position: relative;
+    top: -50px;
+    left: -50px;
+    max-width: 250%;
+    height: auto;
+}
+.img3,
+.box3{
+    position: relative;
+    top: -10px;
+    left: -15px;
+    max-width: 150%;
+    height: auto;
+}
+.img4,
+.box4{
+    position: relative;
+    top: -10px;
+    left: -20px;
+    max-width: 250%;
+    height: auto;
 }
