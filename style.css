@@ -5,19 +5,23 @@ body{
 
 .header{
     display: flex;
-    flex-wrap: wrap;
-    padding: 18px;
-    margin: 32px;
+    flex-direction: column;
+    padding: 52px;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
+    background-color: #1f2937;
+    color: white;
+}
 
-    border: solid red;
+.title{
+    font-weight: bolder;
+    font-size: 24px;
 }
 
 .links{
     display:flex;
-    gap: 12px;
-    border: solid green;
-
+    gap: 22px;
 }
 
 .lower-header{
@@ -28,25 +32,31 @@ body{
     flex-shrink: 1;
     flex-grow: 1;
     flex-wrap: wrap;
-    
-    border: solid aqua;
+    max-width: 1000px;
 }
 
 .left-lower-header{
     display: flex;
     flex-direction: column;
+    flex-basis: 300px; 
+}
 
-    flex-basis: 300px;
-    
+.lower-img{
+    border-radius: 58px;
+}
 
-    border: solid springgreen;
+.lower-title{
+    font-size: larger;
+    font-weight: 900;
 }
 
 .upper-header{
     display:flex;
+    flex-direction: row;
     flex-grow: 1;
+    
     justify-content: space-between;
-    border: solid rebeccapurple;
+    width: 1000px;
 }
 
 .logo{
@@ -75,8 +85,6 @@ body{
     font-size: x-large;
     text-align: center;
     font-weight: bolder;
-
-    border: solid red;
 }
 
 .mid-upper{
@@ -186,7 +194,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px;
+    padding: 52px;
 
     gap:32px;
     border: solid red;
@@ -222,4 +230,14 @@ body{
 
 a{
    text-decoration: none;
+   color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    color: white;
+    background-color: #1f2937;
 }
