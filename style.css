@@ -4,8 +4,6 @@ body{
 }
 
 .header{
-    display: flex;
-    flex-direction: column;
     padding: 52px;
     justify-content: center;
     align-items: center;
@@ -26,19 +24,22 @@ body{
 
 .lower-header{
     display: flex;
-    justify-content: space-between;
-    flex-basis: auto;
+    justify-content: space-around;
+    align-items: center;
     padding: 18px;
     flex-shrink: 1;
     flex-grow: 1;
     flex-wrap: wrap;
-    max-width: 1000px;
+    flex-basis: 100px;
+
+
 }
 
 .left-lower-header{
     display: flex;
     flex-direction: column;
     flex-basis: 300px; 
+    padding: 12px;
 }
 
 .lower-img{
@@ -52,16 +53,17 @@ body{
 
 .upper-header{
     display:flex;
-    flex-direction: row;
-    flex-grow: 1;
-    
-    justify-content: space-between;
-    width: 1000px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
 }
 
 .logo{
     display: flex;
     overflow: hidden;
+    gap:32px;
 }
 
 .center{
@@ -79,6 +81,12 @@ body{
     height: 32px;
     align-self: center;
     border-radius: 32px;
+    
+    background-color: #3882f6;
+    border: 2px solid transparent;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
 }
 
 .mid-title{
@@ -87,10 +95,6 @@ body{
     font-weight: bolder;
 }
 
-.mid-upper{
-    border: solid rgb(255, 96, 221);
-
-}
 .boxes{
     display: flex;
     flex-basis: 50px;
@@ -99,8 +103,6 @@ body{
 
     gap:32px;
     background-color: white;
-
-    border: solid rgb(26, 255, 129);
 }
 
 .info-box1,
@@ -115,9 +117,6 @@ body{
     align-items: center;
     flex-basis: 200px;
     flex-shrink: 0;
-
-    
-    border: solid blue;
 }
 
 .box-click1,
@@ -126,7 +125,6 @@ body{
 .box-click4{
     border-radius: 56px;
     overflow: hidden;
-    border: solid rgb(117, 255, 186);
     width: 150px; /* set the width of the container */
     height: 210px; /* set the height of the container */
 }
@@ -170,9 +168,6 @@ body{
     padding: 98px;
   
     background-color: #e5e7eb;
-
-
-    border: solid rgb(117, 255, 186);
 }
 
 .quote{
@@ -195,9 +190,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 52px;
-
     gap:32px;
-    border: solid red;
 }
 
 .text{
@@ -214,18 +207,15 @@ body{
     padding: 18px;
     border-radius: 12px;
     gap: 24px;
-
-    border: solid purple
 }
 
 .contact{
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    opacity: 1;
     border-radius: 8px;
     width: 80px;
-    height: 25px;
+    height: 30px;
 }
 
 a{
